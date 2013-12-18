@@ -14,7 +14,7 @@
 	<package name="default" extends="struts-default" namespace="/">
 
 		<action name="login"
-			class="com.sandeep.core.LoginAction">
+			class="com.sandeep.actions.LoginAction">
 			<result name="success">Welcome.jsp</result>
 			<result name="failure">Index.jsp</result>
 		</action>
