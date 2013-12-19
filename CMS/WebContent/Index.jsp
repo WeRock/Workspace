@@ -12,7 +12,7 @@
 <%
 	
 %>
-<%=ContentRenderer.getRenderedContent(getServletContext().getRealPath("view/")+"/atoms/header/cms-header.xml", getServletContext().getRealPath("view/")+"/atoms/header/cms-header.xml.xsl")%>
+<%=ContentRenderer.getRenderedContent(getServletContext().getRealPath("view/")+"/atoms/header/cms-header.xml", getServletContext().getRealPath("view/")+"/atoms/header/cms-header.xsl")%>
 </div>
 <div>
 <h2>CMS - Login</h2>

@@ -1,18 +1,25 @@
 package com.sandeep.actions;
 
+import java.util.HashMap;
+
 import com.opensymphony.xwork2.ActionSupport;
 
 public class LoginAction extends ActionSupport{
 	/**
 	 * 
 	 */
+	
 	private static final long serialVersionUID = 1L;
 	private String username;
 	private String password;
 	
 	public String execute()
 	{
-		if(username.equals("sandy")&&password.equals("sandy123"))
+		HashMap<String,String> map= new HashMap<String,String>();
+		map.put("username", username);
+		map.put("password", password);
+		AuthenticateUser auth= new AuthenticateUser();
+		if(auth.getAuthenticationStatus(map))
 		{
 			return "success";
 		}
